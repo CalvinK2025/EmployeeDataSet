@@ -3,10 +3,6 @@
 ![img](https://github.com/CalvinK2025/EmployeeDataSet/blob/main/EmployeeDataSet.drawio.png)
 
 ## Employee Table
-Here's your data in Markdown format:  
-
-```md
-## Employee Table
 
 ```sql
 SELECT * FROM Employee;
@@ -34,5 +30,3 @@ SELECT * FROM Tasks;
 | 4      | Creative         | Develop Marketing Campaign | Plan a marketing campaign          | 5              | 240           | 1             | 1                |
 | 5      | Procedural       | Code Review               | Review code for bugs and efficiency | 2              | 90            | 3             | 1                |
 ```
-
-This Markdown will render the SQL queries and tables properly in GitHub or any Markdown-supported platform. Let me know if you need any changes! 🚀
