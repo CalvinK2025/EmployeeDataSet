@@ -3,7 +3,6 @@
 ![img](https://github.com/CalvinK2025/EmployeeDataSet/blob/main/EmployeeDataSet.drawio.png)
 
 ## Employee Table
-
 ```sql
 SELECT * FROM Employee;
 ```
@@ -21,7 +20,6 @@ SELECT * FROM Employee;
 | 10         | Isabella | Thomas    | isabella.thomas@example.com | 012-345-6789 | 2022-08-30 | Content Strategist  | Marketing        | 75000  | 6.0       |
 
 ## Tasks Table
-
 ```sql
 SELECT * FROM Tasks;
 ```
@@ -44,7 +42,6 @@ SELECT * FROM Tasks;
 | 15     | Procedural      | Write Technical Documentation | Document software features and usage.  | 3              | 180           | 3            | 1                |
 
 ## Messages Table
-
 ```sql
 SELECT * FROM Messages;
 ```
@@ -70,8 +67,6 @@ SELECT * FROM Messages;
 | 17        | 18       | 3          | Yes, I'll email it to you in a few minutes. | 2025-02-16 18:05:00   |
 | 18        | 19       | 5          | Chris, can you troubleshoot the software issue we're facing? | 2025-02-16 19:00:00   |
 | 19        | 20       | 7          | I'll check it out and get back to you. | 2025-02-16 19:05:00   |
-
-
 
 ## Hobby Table
 ```sql
@@ -108,6 +103,4 @@ SELECT * FROM Employee_hobby;
 | 12              | 13        | 7       |
 | 13              | 14        | 2       |
 | 14              | 15        | 3       |
-
-
 
