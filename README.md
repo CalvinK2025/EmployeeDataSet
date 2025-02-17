@@ -6,7 +6,6 @@
 
 ```sql
 SELECT * FROM Employee;
-```
    EmployeeId FirstName  LastName                        Email   PhoneNumber  \
 0           1      John       Doe         john.doe@example.com  123-456-7890   
 1           2      Jane     Smith       jane.smith@example.com  234-567-8901   
