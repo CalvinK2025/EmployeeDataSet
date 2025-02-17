@@ -28,7 +28,6 @@ SELECT * FROM Employee;
 ```sql
 SELECT * FROM Tasks;
 ```
-<small>
 | TaskID | TaskType         | TaskName                    | Description                                      | DifficultyLevel | TimeToComplete | AutoPotential | AssignedEmployeeID |
 |--------|-----------------|----------------------------|-------------------------------------------------|----------------|---------------|--------------|------------------|
 | 1      | Creative        | Design New Feature        | Design and prototype a new feature for the product. | 3              | 180           | 2            | 1                |
@@ -46,7 +45,6 @@ SELECT * FROM Tasks;
 | 13     | Decision-Making | Budget Allocation       | Participate in budget allocation decisions.    | 5              | 90            | 1            | 8                |
 | 14     | Creative        | Develop Marketing Campaign | Create a new marketing campaign.               | 4              | 200           | 2            | 6                |
 | 15     | Procedural      | Write Technical Documentation | Document software features and usage.  | 3              | 180           | 3            | 1                |
-</small>
 ```
 
 ## Messages Table
@@ -54,30 +52,67 @@ SELECT * FROM Tasks;
 ```sql
 SELECT * FROM Messages;
 ```
-MessageID	SenderID	ReceiverID	MessageText	SentDateTime
-0	1	1	2	Hey Jane, can you help me with the data analys...	2025-02-16 10:00:00
-1	2	2	1	Sure, I can assist with that. Let me know the ...	2025-02-16 10:05:00
-2	3	3	4	Emily, we need to discuss the project roadmap ...	2025-02-16 11:00:00
-3	4	4	3	Got it, Michael. Let's schedule a meeting for ...	2025-02-16 11:10:00
-4	5	5	6	Sarah, do you have the design specs for the ne...	2025-02-16 12:00:00
-5	6	6	5	Yes, I'll send them over by the end of the day.	2025-02-16 12:05:00
-6	7	7	8	Olivia, can you review the marketing content f...	2025-02-16 13:00:00
-7	8	8	7	I'll go through it and get back to you shortly.	2025-02-16 13:10:00
-8	9	9	10	Isabella, I need your help with a financial re...	2025-02-16 14:00:00
-9	10	10	9	Sure, I'll get on it and send it to you by Thu...	2025-02-16 14:05:00
-10	11	11	12	Ava, we have a system outage. Can you help wit...	2025-02-16 15:00:00
-11	12	12	11	I'm on it. Let's fix this ASAP.	2025-02-16 15:10:00
-12	13	13	14	Sophia, I need the budget allocation for the u...	2025-02-16 16:00:00
-13	14	14	13	I'll prepare the documents and send them to yo...	2025-02-16 16:05:00
-14	15	15	1	Benjamin, can you design a new feature for our...	2025-02-16 17:00:00
-15	16	1	15	Sure! I'll start working on it today.	2025-02-16 17:05:00
-16	17	1	3	Michael, do you have the product strategy docu...	2025-02-16 18:00:00
-17	18	3	1	Yes, I'll email it to you in a few minutes.	2025-02-16 18:05:00
-18	19	5	7	Chris, can you troubleshoot the software issue...	2025-02-16 19:00:00
-19	20	7	5	I'll check it out and get back to you.	2025-02-16 19:05:00
+| MessageID | SenderID | ReceiverID | MessageText                                      | SentDateTime          |
+|-----------|----------|------------|-------------------------------------------------|-----------------------|
+| 0         | 1        | 1          | Hey Jane, can you help me with the data analysis? | 2025-02-16 10:00:00   |
+| 1         | 2        | 2          | Sure, I can assist with that. Let me know the details. | 2025-02-16 10:05:00   |
+| 2         | 3        | 3          | Emily, we need to discuss the project roadmap soon. | 2025-02-16 11:00:00   |
+| 3         | 4        | 4          | Got it, Michael. Let's schedule a meeting for next week. | 2025-02-16 11:10:00   |
+| 4         | 5        | 5          | Sarah, do you have the design specs for the new project? | 2025-02-16 12:00:00   |
+| 5         | 6        | 6          | Yes, I'll send them over by the end of the day. | 2025-02-16 12:05:00   |
+| 6         | 7        | 7          | Olivia, can you review the marketing content for the campaign? | 2025-02-16 13:00:00   |
+| 7         | 8        | 8          | I'll go through it and get back to you shortly. | 2025-02-16 13:10:00   |
+| 8         | 9        | 9          | Isabella, I need your help with a financial report. | 2025-02-16 14:00:00   |
+| 9         | 10       | 10         | Sure, I'll get on it and send it to you by Thursday. | 2025-02-16 14:05:00   |
+| 10        | 11       | 11         | Ava, we have a system outage. Can you help with this? | 2025-02-16 15:00:00   |
+| 11        | 12       | 12         | I'm on it. Let's fix this ASAP. | 2025-02-16 15:10:00   |
+| 12        | 13       | 13         | Sophia, I need the budget allocation for the upcoming quarter. | 2025-02-16 16:00:00   |
+| 13        | 14       | 14         | I'll prepare the documents and send them to you shortly. | 2025-02-16 16:05:00   |
+| 14        | 15       | 15         | Benjamin, can you design a new feature for our app? | 2025-02-16 17:00:00   |
+| 15        | 16       | 1          | Sure! I'll start working on it today. | 2025-02-16 17:05:00   |
+| 16        | 17       | 1          | Michael, do you have the product strategy document ready? | 2025-02-16 18:00:00   |
+| 17        | 18       | 3          | Yes, I'll email it to you in a few minutes. | 2025-02-16 18:05:00   |
+| 18        | 19       | 5          | Chris, can you troubleshoot the software issue we're facing? | 2025-02-16 19:00:00   |
+| 19        | 20       | 7          | I'll check it out and get back to you. | 2025-02-16 19:05:00   |
 
+```
 
+## Hobby Table
+```sql
+SELECT * From Hobby;
+```
+| HobbyID | HobbyName   | Description                                              |
+|---------|-------------|----------------------------------------------------------|
+| 0       | Photography | Capturing moments and scenes with a camera to preserve memories. |
+| 1       | Cooking     | Preparing meals by combining ingredients and following recipes. |
+| 2       | Reading     | Engaging in the activity of reading books, articles, or other written materials. |
+| 3       | Hiking      | Walking long distances, usually on trails or in nature. |
+| 4       | Music       | Playing instruments or listening to music to express emotions or relax. |
+| 5       | Gardening   | Cultivating plants and flowers for aesthetic or practical purposes. |
+| 6       | Painting    | Creating artwork using various techniques, such as watercolor, oil, or acrylics. |
+```
 
+## Employee_hobby Table
+```sql
+SELECT * FROM Employee_hobby;
+```
+| EmployeeHobbyID | EmployeeID | HobbyID |
+|-----------------|-----------|---------|
+| 0               | 1         | 1       |
+| 1               | 2         | 3       |
+| 2               | 3         | 4       |
+| 3               | 4         | 5       |
+| 4               | 5         | 6       |
+| 5               | 6         | 7       |
+| 6               | 7         | 2       |
+| 7               | 8         | 3       |
+| 8               | 9         | 4       |
+| 9               | 10        | 1       |
+| 10              | 11        | 5       |
+| 11              | 12        | 6       |
+| 12              | 13        | 7       |
+| 13              | 14        | 2       |
+| 14              | 15        | 3       |
 ```
 
 
