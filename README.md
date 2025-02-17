@@ -6,7 +6,7 @@
 
 ```sql
 SELECT * FROM Employee;
-
+```
 | EmployeeId | FirstName | LastName  | Email                      | PhoneNumber   | HireDate   | JobTitle            | Department       | Salary | ManagerID |
 |------------|----------|-----------|----------------------------|--------------|------------|---------------------|------------------|--------|-----------|
 | 1          | John     | Doe       | john.doe@example.com       | 123-456-7890 | 2023-03-15 | Software Engineer   | Technology       | 75000  | NaN       |
