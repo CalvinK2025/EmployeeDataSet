@@ -20,9 +20,6 @@ SELECT * FROM Employee;
 | 9          | James    | Anderson  | james.anderson@example.com | 901-234-5678 | 2020-03-19 | Network Engineer    | Technology       | 80000  | 1.0       |
 | 10         | Isabella | Thomas    | isabella.thomas@example.com | 012-345-6789 | 2022-08-30 | Content Strategist  | Marketing        | 75000  | 6.0       |
 
-```
-
-
 ## Tasks Table
 
 ```sql
@@ -45,7 +42,6 @@ SELECT * FROM Tasks;
 | 13     | Decision-Making | Budget Allocation       | Participate in budget allocation decisions.    | 5              | 90            | 1            | 8                |
 | 14     | Creative        | Develop Marketing Campaign | Create a new marketing campaign.               | 4              | 200           | 2            | 6                |
 | 15     | Procedural      | Write Technical Documentation | Document software features and usage.  | 3              | 180           | 3            | 1                |
-```
 
 ## Messages Table
 
@@ -75,7 +71,7 @@ SELECT * FROM Messages;
 | 18        | 19       | 5          | Chris, can you troubleshoot the software issue we're facing? | 2025-02-16 19:00:00   |
 | 19        | 20       | 7          | I'll check it out and get back to you. | 2025-02-16 19:05:00   |
 
-```
+
 
 ## Hobby Table
 ```sql
@@ -90,7 +86,6 @@ SELECT * From Hobby;
 | 4       | Music       | Playing instruments or listening to music to express emotions or relax. |
 | 5       | Gardening   | Cultivating plants and flowers for aesthetic or practical purposes. |
 | 6       | Painting    | Creating artwork using various techniques, such as watercolor, oil, or acrylics. |
-```
 
 ## Employee_hobby Table
 ```sql
@@ -113,7 +108,6 @@ SELECT * FROM Employee_hobby;
 | 12              | 13        | 7       |
 | 13              | 14        | 2       |
 | 14              | 15        | 3       |
-```
 
 
 
