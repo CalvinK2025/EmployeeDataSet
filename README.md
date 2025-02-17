@@ -28,6 +28,7 @@ SELECT * FROM Employee;
 ```sql
 SELECT * FROM Tasks;
 ```
+<small>
 | TaskID | TaskType         | TaskName                    | Description                                      | DifficultyLevel | TimeToComplete | AutoPotential | AssignedEmployeeID |
 |--------|-----------------|----------------------------|-------------------------------------------------|----------------|---------------|--------------|------------------|
 | 1      | Creative        | Design New Feature        | Design and prototype a new feature for the product. | 3              | 180           | 2            | 1                |
@@ -45,6 +46,7 @@ SELECT * FROM Tasks;
 | 13     | Decision-Making | Budget Allocation       | Participate in budget allocation decisions.    | 5              | 90            | 1            | 8                |
 | 14     | Creative        | Develop Marketing Campaign | Create a new marketing campaign.               | 4              | 200           | 2            | 6                |
 | 15     | Procedural      | Write Technical Documentation | Document software features and usage.  | 3              | 180           | 3            | 1                |
+</small>
 ```
 
 ## Messages Table
