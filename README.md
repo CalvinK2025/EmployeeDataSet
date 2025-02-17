@@ -23,19 +23,60 @@ SELECT * FROM Employee;
 ```
 
 
-
-
 ## Tasks Table
 
 ```sql
 SELECT * FROM Tasks;
 ```
-
-| TaskID | TaskType          | TaskName                    | Description                          | DifficultyLevel | TimeToComplete | AutoPotential | AssignedEmployeeID |
-|--------|------------------|----------------------------|-------------------------------------|----------------|---------------|---------------|------------------|
-| 1      | Creative         | Design Website Mockup      | Create initial website wireframes  | 3              | 120           | 2             | 2                |
-| 2      | Procedural       | Data Cleaning             | Cleanse and prepare customer data  | 2              | 60            | 4             | 2                |
-| 3      | Decision-Making  | Project Prioritization    | Prioritize upcoming projects       | 4              | 30            | 1             | 3                |
-| 4      | Creative         | Develop Marketing Campaign | Plan a marketing campaign          | 5              | 240           | 1             | 1                |
-| 5      | Procedural       | Code Review               | Review code for bugs and efficiency | 2              | 90            | 3             | 1                |
+| TaskID | TaskType         | TaskName                    | Description                                      | DifficultyLevel | TimeToComplete | AutoPotential | AssignedEmployeeID |
+|--------|-----------------|----------------------------|-------------------------------------------------|----------------|---------------|--------------|------------------|
+| 1      | Creative        | Design New Feature        | Design and prototype a new feature for the product. | 3              | 180           | 2            | 1                |
+| 2      | Procedural      | Data Cleaning             | Clean and preprocess raw data for analysis.     | 2              | 120           | 3            | 2                |
+| 3      | Decision-Making | Product Strategy Meeting  | Attend a meeting to define the roadmap.        | 4              | 90            | 1            | 3                |
+| 4      | Procedural      | Employee Onboarding      | Assist in onboarding new employees.            | 2              | 150           | 3            | 4                |
+| 5      | Creative        | Develop New Software     | Write and develop software for clients.        | 5              | 240           | 1            | 1                |
+| 6      | Creative        | Design User Interface    | Design UI for a new application.               | 4              | 200           | 2            | 5                |
+| 7      | Procedural      | System Maintenance       | Perform routine maintenance on software.       | 3              | 180           | 4            | 9                |
+| 8      | Creative        | Content Strategy         | Develop content strategy for marketing.        | 3              | 150           | 2            | 6                |
+| 9      | Decision-Making | HR Policy Review        | Review and update HR policies.                 | 4              | 120           | 1            | 4                |
+| 10     | Procedural      | Analyze Business Metrics | Analyze and report on key business metrics.    | 3              | 180           | 3            | 2                |
+| 11     | Procedural      | Network Troubleshooting | Troubleshoot and resolve network issues.       | 3              | 120           | 3            | 9                |
+| 12     | Creative        | Design Sales Materials   | Create and design sales materials.             | 3              | 150           | 2            | 6                |
+| 13     | Decision-Making | Budget Allocation       | Participate in budget allocation decisions.    | 5              | 90            | 1            | 8                |
+| 14     | Creative        | Develop Marketing Campaign | Create a new marketing campaign.               | 4              | 200           | 2            | 6                |
+| 15     | Procedural      | Write Technical Documentation | Document software features and usage.  | 3              | 180           | 3            | 1                |
 ```
+
+## Messages Table
+
+```sql
+SELECT * FROM Messages;
+```
+MessageID	SenderID	ReceiverID	MessageText	SentDateTime
+0	1	1	2	Hey Jane, can you help me with the data analys...	2025-02-16 10:00:00
+1	2	2	1	Sure, I can assist with that. Let me know the ...	2025-02-16 10:05:00
+2	3	3	4	Emily, we need to discuss the project roadmap ...	2025-02-16 11:00:00
+3	4	4	3	Got it, Michael. Let's schedule a meeting for ...	2025-02-16 11:10:00
+4	5	5	6	Sarah, do you have the design specs for the ne...	2025-02-16 12:00:00
+5	6	6	5	Yes, I'll send them over by the end of the day.	2025-02-16 12:05:00
+6	7	7	8	Olivia, can you review the marketing content f...	2025-02-16 13:00:00
+7	8	8	7	I'll go through it and get back to you shortly.	2025-02-16 13:10:00
+8	9	9	10	Isabella, I need your help with a financial re...	2025-02-16 14:00:00
+9	10	10	9	Sure, I'll get on it and send it to you by Thu...	2025-02-16 14:05:00
+10	11	11	12	Ava, we have a system outage. Can you help wit...	2025-02-16 15:00:00
+11	12	12	11	I'm on it. Let's fix this ASAP.	2025-02-16 15:10:00
+12	13	13	14	Sophia, I need the budget allocation for the u...	2025-02-16 16:00:00
+13	14	14	13	I'll prepare the documents and send them to yo...	2025-02-16 16:05:00
+14	15	15	1	Benjamin, can you design a new feature for our...	2025-02-16 17:00:00
+15	16	1	15	Sure! I'll start working on it today.	2025-02-16 17:05:00
+16	17	1	3	Michael, do you have the product strategy docu...	2025-02-16 18:00:00
+17	18	3	1	Yes, I'll email it to you in a few minutes.	2025-02-16 18:05:00
+18	19	5	7	Chris, can you troubleshoot the software issue...	2025-02-16 19:00:00
+19	20	7	5	I'll check it out and get back to you.	2025-02-16 19:05:00
+
+
+
+```
+
+
+
