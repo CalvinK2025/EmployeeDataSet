@@ -1,4 +1,11 @@
 # EmployeeDataSet
+
+## How to Use
+1. Download raw file. https://github.com/CalvinK2025/EmployeeDataSet/blob/main/Employee_Data_Set.ipynb
+2. https://colab.research.google.com/ > Upload.
+3. Run the first code cell on the colab to see all the data rendered. 
+4. Add your SQL query with a new code cell to practice interesting and complicated questions.
+
 ## ER Diagram 
 ![img](https://github.com/CalvinK2025/EmployeeDataSet/blob/main/EmployeeDataSet.drawio.png)
 
